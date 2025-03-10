@@ -29,7 +29,6 @@ Combined_nodup=Combined.drop_duplicates(subset=['ZIP', 'CBSA'])
 def split_states(df, column_name):
     # Extract state information (assumes states are always at the end)
     df.loc[:, 'State'] = df[column_name].str.extract(r'([A-Z]{2}(?:-[A-Z]{2})*)$')[0]
-    
 
     # Split hyphenated states into a list (e.g., "NY-NJ" becomes ["NY", "NJ"])
     df['State'] = df['State'].str.split('-')
@@ -45,8 +44,9 @@ def split_states(df, column_name):
 
 Combined_nodup_new=split_states(Combined_nodup, 'CBSA Title')
 
-Combined_nodup_new
+Combined_nodup_new['Locale']=Combined_nodup_new['CBSA Title'].apply(lambda x: x.split(',')[0])
 
+Combined_nodup_new
 
 Combined_nodup_new.to_csv('ZIP_CBSA_Combined.csv', index=False)
 
