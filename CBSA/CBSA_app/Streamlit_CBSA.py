@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-CBSA=pd.read_csv('ZIP_CBSA_Combined.csv', dtype={'ZIP':'string', 'CBSA':'string'})
+CBSA=pd.read_csv('CBSA/CBSA_app/ZIP_CBSA_Combined.csv', dtype={'ZIP':'string', 'CBSA':'string'})
 
 
 
