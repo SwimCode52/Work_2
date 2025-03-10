@@ -31,12 +31,12 @@ lookup_zips('New York-Newark-Jersey City, NY-NJ')
 
 def landing_page():
    st.title("CBSA Work Around")
-   state_names = list(CBSA['State'].unique())
+   state_names = list(CBSA['State'].unique()).sort()
    if selected_options := st.multiselect("Select State(s):", state_names):
       holding_tank=[]
       for thing in selected_options:
          snip=CBSA[CBSA.State == thing]
-         thing = list(snip['Locale'].unique())
+         thing = list(snip['Locale'].unique()).sort()
          holding_tank.extend(iter(thing))
       if locale_options:= st.multiselect('Select Cities:', holding_tank):
          for town in locale_options:
