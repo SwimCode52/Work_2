@@ -60,19 +60,19 @@ def landing_page():
 
                for count, entry in enumerate(town_zip[0]):  # First filter
                   if count == 0:
-                     csv_list_1 += f'{entry}, '
+                     csv_list_1 += f'{entry},'
                   elif count == len(town_zip[0]) - 1:
                      csv_list_1 += f'{entry}'
                   else:
-                     csv_list_1 += f'{entry}, '
+                     csv_list_1 += f'{entry},'
 
                for count, entry in enumerate(town_zip[1]):  # Second filter
                   if count == 0:
-                     csv_list_2 += f'{entry}, '
+                     csv_list_2 += f'{entry},'
                   elif count == len(town_zip[0]) - 1:
                      csv_list_2 += f'{entry}'
                   else:
-                     csv_list_2 += f'{entry}, '
+                     csv_list_2 += f'{entry},'
 
                st.markdown(f'**{town}**')
                st.markdown('**First Filter**')
