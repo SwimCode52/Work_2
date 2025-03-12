@@ -88,4 +88,4 @@ One_Hopkins=pd.merge(total_list,splitlist_info, on=['Salutation','First Name','L
 
 
 
-One_Hopkins.to_csv('One_Hopkins_Master2')
+One_Hopkins.to_excel('One_Hopkins_Master2.xlsx')
