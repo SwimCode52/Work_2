@@ -1,4 +1,4 @@
-﻿CBSA_CODE,ZIP_CODE,CITY,STATE,CBSA_DESC
+﻿CBSA,ZIP,Locale,State,CBSA Title
 27260,32258,Jacksonville,FL,"Jacksonville, FL"
 16980,60586,Plainfield,IL,"Chicago-Naperville-Elgin, IL-IN-WI"
 49340,06256,North Windham,CT,"Worcester, MA-CT"
@@ -469,7 +469,7 @@ NULL,24280,Rosedale,VA,NULL
 13820,35266,Birmingham,AL,"Birmingham-Hoover, AL"
 31080,90041,Los Angelese,CA,"Los Angeles-Long Beach-Anaheim, CA"
 39660,57785,Sturgis,SD,"Rapid City, SD"
-47900,20853,Rocville md,MD,"Washington-Arlington-Alexandria, DC-VA-MD-WV"
+47900,20853,Rockville md,MD,"Washington-Arlington-Alexandria, DC-VA-MD-WV"
 42660,98101,"Seattle ",WA,"Seattle-Tacoma-Bellevue, WA"
 17900,29180,Winnsboro,SC,"Columbia, SC"
 35380,70139,New Orleans,LA,"New Orleans-Metairie, LA"
@@ -557,7 +557,7 @@ NULL,93526,Independence,CA,NULL
 NULL,59349,Terry,MT,NULL
 39820,96062,Millville,CA,"Redding, CA"
 41860,94553,Pacheco,CA,"San Francisco-Oakland-Berkeley, CA"
-47900,20105,aldie,VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV"
+47900,20105,Aldie,VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV"
 37980,19809,Bellefonte,DE,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"
 16740,28269,CHARLOTTE,NC,"Charlotte-Concord-Gastonia, NC-SC"
 16220,82605,Casper,WY,"Casper, WY"
