@@ -47,12 +47,12 @@ def landing_page():
    st.write('You selected:', option)
    if option == 'HUD CBSA List':
        CBSA=Correct_CBSA
-       st.write(' This option is the most up to date CBSA Data but **does not match Marketing Cloud and should not be used in financial reporting**')
+       st.subheader(' This option is the most up to date CBSA Data but **does not match Marketing Cloud and should not be used in financial reporting**')
    elif option == 'MarketingCloud List':
        CBSA=MC_CBSA
-       st.write('This selection matches the current mapping for Marketing Cloud.')
+       st.subheader('This selection matches the current mapping for Marketing Cloud.')
    else:
-      st.write(' Please select option')
+      st.subheader(' Please select option')
 
    if option in ['HUD CBSA List', 'MarketingCloud List']:
       state_names = list(CBSA['State'].unique())
@@ -143,7 +143,7 @@ def landing_page():
                   st.text_area("Second Filter:", csv_list_2)
 
                   st.divider()
-                  
+
                   st.markdown('**Third Filter**')
                   st.text_area("Remaining ZIP Codes:", csv_list_3)
 
