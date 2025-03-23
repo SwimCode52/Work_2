@@ -99,7 +99,9 @@ def landing_page():
                   st.markdown(f'**{town}**')
                   st.markdown('**First Filter**')
                   st.text_area("ZIP Codes (First 222):", csv_list_1)
+
                   st.divider()
+
                   st.markdown('**Second Filter**')
                   st.text_area("Remaining ZIP Codes:", csv_list_2)
                else:
@@ -134,10 +136,14 @@ def landing_page():
                   st.markdown(f'**{town}**')
                   st.markdown('**First Filter**')
                   st.text_area("ZIP Codes (First 222):", csv_list_1)
+
                   st.divider()
+
                   st.markdown('**Second Filter**')
                   st.text_area("Second Filter:", csv_list_2)
+
                   st.divider()
+                  
                   st.markdown('**Third Filter**')
                   st.text_area("Remaining ZIP Codes:", csv_list_3)
 
