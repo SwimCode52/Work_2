@@ -47,7 +47,7 @@ def landing_page():
    st.write('You selected:', option)
    if option == 'HUD CBSA List':
        CBSA=Correct_CBSA
-       st.markdown(""" black[This option is the most up to date CBSA Data but] red[**does not match Marketing Cloud and should not be used in financial reporting**]""")
+       st.markdown(""" :black[This option is the most up to date CBSA Data but] :red[**does not match Marketing Cloud and should not be used in financial reporting**]""")
    elif option == 'MarketingCloud List':
        CBSA=MC_CBSA
        st.markdown('This selection matches the current mapping for Marketing Cloud.')
